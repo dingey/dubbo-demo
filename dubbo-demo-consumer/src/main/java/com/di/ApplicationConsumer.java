@@ -1,0 +1,25 @@
+/* 
+ * Copyright (c) 2016, Jiehun.com.cn Inc. All Rights Reserved 
+ */
+package com.di;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+import org.springframework.context.annotation.ComponentScan;
+
+@EnableAutoConfiguration
+@ComponentScan
+public class ApplicationConsumer implements EmbeddedServletContainerCustomizer {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationConsumer.class, args);
+    }
+
+    @Override
+    public void customize(ConfigurableEmbeddedServletContainer container) {
+        container.setPort(8082);
+    }
+}
