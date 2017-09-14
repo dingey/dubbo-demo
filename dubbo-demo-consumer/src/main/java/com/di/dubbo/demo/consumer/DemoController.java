@@ -5,11 +5,8 @@ package com.di.dubbo.demo.consumer;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.di.dubbo.demo.DemoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Date;
 
 /**
  * @author di
