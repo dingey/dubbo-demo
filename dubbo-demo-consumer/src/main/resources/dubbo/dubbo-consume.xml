@@ -14,5 +14,5 @@
 
     <!--<dubbo:reference id="demoService" interface="com.di.dubbo.demo.DemoService" />-->
 
-    <dubbo:annotation package="com.di.dubbo" />
+    <dubbo:annotation package="com.d.dubbo" />
 </beans>

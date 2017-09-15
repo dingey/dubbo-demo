@@ -16,3 +16,5 @@ dubbo-demo.iml
 /dubbo-demo-provider/target/
 /dubbo-demo-provider/.project
 /dubbo-demo-provider/dubbo-demo-api.iml
+dubbo-demo-consumer/.springBeans
+dubbo-demo-provider/.springBeans
