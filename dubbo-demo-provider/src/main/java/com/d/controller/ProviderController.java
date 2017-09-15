@@ -1,6 +1,3 @@
-/* 
- * Copyright (c) 2016, Jiehun.com.cn Inc. All Rights Reserved 
- */
 package com.d.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
