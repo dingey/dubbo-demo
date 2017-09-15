@@ -1,0 +1,13 @@
+server:
+  address: 127.0.0.1
+  session:
+    timeout: 1800
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.d.entity
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=true&characterEncoding=utf-8
+    username: root
+    password: root
