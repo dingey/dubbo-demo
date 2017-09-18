@@ -11,7 +11,7 @@ import com.di.kit.MvcGenerater;
  * @author d
  */
 public class Generator {
-	String url = "jdbc:mysql://192.168.88.169:3306/test?serverTimezone=UTC&useUnicode=true&useSSL=true&characterEncoding=UTF-8";
+	String url = "jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&useSSL=true&characterEncoding=UTF-8";
 	String username = "root";
 	String password = "root";
 	String entityPcakage = "com.d.entity";
