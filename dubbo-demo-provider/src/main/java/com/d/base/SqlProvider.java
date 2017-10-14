@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class SqlProvider {
 	static final HashMap<String, String> sqls = new HashMap<String, String>();
 
-	public String insert(Object bean) {
+	public String insert(final Object bean) {
 		return getCache(bean, "insert", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -70,7 +70,7 @@ public class SqlProvider {
 		return insertSql.toString();
 	}
 
-	public String update(Object bean) {
+	public String update(final Object bean) {
 		return getCache(bean, "update", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -113,7 +113,7 @@ public class SqlProvider {
 		return updateSql.toString();
 	}
 
-	public String delete(Object bean) {
+	public String delete(final Object bean) {
 		return getCache(bean, "delete", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -138,7 +138,7 @@ public class SqlProvider {
 		});
 	}
 
-	public String deleteMark(Object bean) {
+	public String deleteMark(final Object bean) {
 		return getCache(bean, "deleteMark", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -165,7 +165,7 @@ public class SqlProvider {
 		});
 	}
 
-	public String get(Object bean) {
+	public String get(final Object bean) {
 		return getCache(bean, "get", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -190,7 +190,7 @@ public class SqlProvider {
 		});
 	}
 
-	public String findAll(Object bean) {
+	public String findAll(final Object bean) {
 		return getCache(bean, "findAll", new Func<Object>() {
 			@Override
 			public String apply(Object t) {
@@ -202,7 +202,7 @@ public class SqlProvider {
 		});
 	}
 	
-	public String countAll(Object bean) {
+	public String countAll(final Object bean) {
 		return getCache(bean, "countAll", new Func<Object>() {
 			@Override
 			public String apply(Object t) {

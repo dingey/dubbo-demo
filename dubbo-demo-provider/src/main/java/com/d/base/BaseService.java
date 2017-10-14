@@ -13,7 +13,7 @@ import com.github.pagehelper.PageInfo;
 /**
  * @author d
  */
-public abstract class BaseService<D extends BaseMapper<T>, T extends BaseEntity<T>> {
+public abstract class BaseService<D extends BaseMapper<T>, T extends BaseEntity<T>> implements IBaseService<D, T>{
 	@Autowired
 	protected D mapper;
 	private T entity;
